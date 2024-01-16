@@ -5,6 +5,8 @@ import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
 import com.facebook.react.defaults.DefaultReactActivityDelegate
 
+import android.os.Bundle;
+
 class MainActivity : ReactActivity() {
 
   /**
@@ -13,6 +15,8 @@ class MainActivity : ReactActivity() {
    */
   override fun getMainComponentName(): String = "mobileapp"
 
+ 
+
   /**
    * Returns the instance of the [ReactActivityDelegate]. We use [DefaultReactActivityDelegate]
    * which allows you to enable New Architecture with a single boolean flags [fabricEnabled]
@@ -20,3 +24,4 @@ class MainActivity : ReactActivity() {
   override fun createReactActivityDelegate(): ReactActivityDelegate =
       DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled)
 }
+
