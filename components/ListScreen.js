@@ -1,7 +1,6 @@
 import { View, Text, SafeAreaView, TouchableOpacity, FlatList, ScrollView, RefreshControl, ActivityIndicator, TextInput } from 'react-native'
 import React, { useState, useEffect } from 'react'
 import styles from './Style'
-import Icon from 'react-native-vector-icons/FontAwesome';
 import axios from 'axios';
 
 const Header = ({ searchQuery, setSearchQuery }) => {

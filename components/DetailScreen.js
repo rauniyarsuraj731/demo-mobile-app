@@ -1,16 +1,13 @@
 import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
 import React from 'react'
 import styles from './Style';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 const Header = ({ navigation }) => {
     return (
         <SafeAreaView>
             <View style={styles.headerDetails}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                {/* <Icon name="rocket" size={30} color="#900" /> */}
                 <Text style={styles.backArrow}>←</Text>
-                    {/* <Text>Go back</Text> */}
                 </TouchableOpacity>
             </View>
         </SafeAreaView>
